@@ -18,7 +18,7 @@ export default function CursorGlow() {
   return (
     <div
       ref={blobRef}
-      className="pointer-events-none fixed z-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl opacity-25 bg-sky-300 dark:opacity-20 dark:bg-violet-500 transition-[left,top] duration-300 ease-out"
+      className="pointer-events-none fixed z-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl opacity-25 bg-sky-300 dark:opacity-20 dark:bg-teal-500 transition-[left,top] duration-300 ease-out"
     />
   );
 }

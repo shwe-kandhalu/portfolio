@@ -19,7 +19,7 @@ export default function Resume() {
               <a
                 href="/resume.pdf"
                 download
-                className="rounded-full bg-[#8b5cf6] px-4 py-2 text-white transition hover:bg-[#7c3aed]"
+                className="rounded-full bg-[#0d9488] px-4 py-2 text-white transition hover:bg-[#0f766e]"
               >
                 Download PDF
               </a>
@@ -32,14 +32,14 @@ export default function Resume() {
 
           {/* Name + Contact */}
           <div className="border-b border-zinc-200 pb-8 text-center dark:border-white/10">
-            <h1 className="text-4xl font-semibold tracking-tight">Shwetha Kandhalu</h1>
+            <h1 className="text-4xl font-semibold tracking-tight">Shwetha Kandhalu Bhaskar</h1>
             <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
               San Francisco, CA &nbsp;·&nbsp;
-              <a href="tel:4084892444" className="hover:text-[#8b5cf6]">(408) 489-2444</a>
+              <a href="tel:4084892444" className="hover:text-[#0d9488]">(408) 489-2444</a>
               &nbsp;·&nbsp;
-              <a href="mailto:shwe.kandhalu@gmail.com" className="hover:text-[#8b5cf6]">shwe.kandhalu@gmail.com</a>
+              <a href="mailto:shwe.kandhalu@gmail.com" className="hover:text-[#0d9488]">shwe.kandhalu@gmail.com</a>
               &nbsp;·&nbsp;
-              <a href="https://linkedin.com/in/shwethakandhalu" target="_blank" rel="noreferrer" className="hover:text-[#8b5cf6]">LinkedIn</a>
+              <a href="https://linkedin.com/in/shwethakandhalu" target="_blank" rel="noreferrer" className="hover:text-[#0d9488]">LinkedIn</a>
             </p>
           </div>
 
@@ -167,7 +167,7 @@ export default function Resume() {
 function Section({ title, children, last }: { title: string; children: React.ReactNode; last?: boolean }) {
   return (
     <div className={`py-8 ${last ? "" : "border-b border-zinc-200 dark:border-white/10"}`}>
-      <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.15em] text-[#8b5cf6]">{title}</h2>
+      <h2 className="mb-5 text-xs font-semibold uppercase tracking-[0.15em] text-[#0d9488]">{title}</h2>
       {children}
     </div>
   );
