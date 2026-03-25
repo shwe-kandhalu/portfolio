@@ -1,5 +1,6 @@
 import { getProjects, getText } from "../lib/notion";
 import ThemeToggle from "../components/theme-toggle";
+import CursorGlow from "../components/cursor-glow";
 // If your file is src/app/page.tsx, change the imports to:
 // import { getProjects, getText } from "../../lib/notion";
 // import ThemeToggle from "../../components/theme-toggle";
@@ -18,7 +19,7 @@ export default async function Home() {
   const visibleProjects = featuredProjects.length > 0 ? featuredProjects : projects;
 
   return (
-    <main className="min-h-screen bg-[#fafafa] text-black transition-colors duration-300 dark:bg-gradient-to-b dark:from-[#0f172a] dark:via-[#020617] dark:to-black dark:text-white">
+    <main className="min-h-screen bg-gradient-to-b from-sky-50 via-blue-50 to-white text-black transition-colors duration-300 dark:from-[#130b2e] dark:via-[#0b1530] dark:to-[#040a1a] dark:text-white">
       <div className="mx-auto max-w-6xl px-6 pb-16 pt-6">
         <header className="sticky top-0 z-20 mb-14 rounded-2xl border border-zinc-200 bg-white/80 px-5 py-4 backdrop-blur transition-colors dark:border-white/10 dark:bg-zinc-950/75">
           <nav className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -29,6 +30,9 @@ export default async function Home() {
             <div className="flex flex-wrap items-center gap-2 text-sm">
               <a href="#projects" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
                 Projects
+              </a>
+              <a href="/resume" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
+                Resume
               </a>
               <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
                 GitHub
@@ -158,6 +162,7 @@ export default async function Home() {
       </div>
 
       <ThemeToggle />
+      <CursorGlow />
     </main>
   );
 }
