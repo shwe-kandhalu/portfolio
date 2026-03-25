@@ -16,7 +16,7 @@ export default async function Home() {
   const visibleProjects = featuredProjects.length > 0 ? featuredProjects : projects;
 
   return (
-    <main className="min-h-screen scroll-smooth bg-[radial-gradient(circle_at_top,_rgba(39,39,42,0.95),_rgba(9,9,11,1))] text-white">
+    <main className="min-h-screen scroll-smooth bg-gradient-to-b from-[#0f172a] via-[#020617] to-black text-white">
       <div className="mx-auto max-w-6xl px-6 pb-16 pt-6">
         <header className="sticky top-0 z-20 mb-14 rounded-2xl border border-white/5 bg-zinc-950/75 px-5 py-4 backdrop-blur">
           <nav className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -64,7 +64,7 @@ export default async function Home() {
             </p>
 
             <h1 className="max-w-4xl text-5xl font-semibold tracking-tight sm:text-7xl">
-              Hi, I’m Shwetha.
+              Hi, I’m <span className="text-indigo-400">Shwetha</span>.
               <span className="mt-2 block text-zinc-400">
                 I build clean, useful web projects.
               </span>
@@ -83,7 +83,7 @@ export default async function Home() {
               </a>
               <a
                 href={EMAIL_URL}
-                className="rounded-full border border-zinc-800 bg-zinc-900/70 px-5 py-3 font-medium text-white transition hover:border-zinc-600 hover:bg-zinc-800"
+                className="rounded-full border border-zinc-800 bg-white/5 backdrop-blur-lg px-5 py-3 font-medium text-white transition hover:border-zinc-600 hover:bg-zinc-800"
               >
                 Email Me
               </a>
@@ -137,13 +137,13 @@ export default async function Home() {
                 return (
                   <article
                     key={project.id}
-                    className="group rounded-3xl border border-zinc-800 bg-zinc-900/70 p-6 shadow-lg transition hover:-translate-y-1 hover:border-zinc-600 hover:bg-zinc-900"
+                    className="group rounded-3xl border border-zinc-800 bg-white/5 backdrop-blur-lg p-6 shadow-lg transition hover:-translate-y-1 hover:border-zinc-600 hover:bg-zinc-900"
                   >
                     <div className="flex flex-wrap gap-2">
                       {tech.map((item: string) => (
                         <span
                           key={item}
-                          className="rounded-full border border-zinc-700 bg-zinc-950/50 px-3 py-1 text-xs text-zinc-300"
+                          className="rounded-full border border-zinc-700 bg-indigo-500/10 text-indigo-300 border-indigo-500/20 px-3 py-1 text-xs text-zinc-300"
                         >
                           {item}
                         </span>
