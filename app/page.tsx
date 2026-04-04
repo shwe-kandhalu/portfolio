@@ -131,13 +131,13 @@ export default async function Home() {
           <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-8">
             <div className="space-y-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
               <p>
-                I work with data in healthcare and biomedical settings, mostly in places where the goal is to actually make something useful out of it, not just build models for the sake of it. At the UCSF Memory &amp; Aging Center, I study how language background affects neuropsychological testing in patients with dementia, using a mix of statistical modeling, machine learning, and longitudinal data.
+                I work in data science across healthcare and biomedical settings, focusing on turning messy, real-world data into something useful. At the UCSF Memory &amp; Aging Center, I study how language background affects neuropsychological testing in dementia using statistical modeling, machine learning, and longitudinal data.
               </p>
               <p>
-                I've also spent time outside of academic research, including defining clinical metrics at Natera and looking at early-stage healthtech companies through UCSF Innovation Ventures. A lot of what I care about is making sure the analysis translates into something people can actually use, whether that's clinicians, product teams, or decision-makers.
+                I've also worked outside academia, defining clinical metrics at Natera and evaluating early-stage healthtech companies through UCSF Innovation Ventures, which has shaped how I approach data in more applied, decision-focused contexts.
               </p>
               <p>
-                Day to day, I might be cleaning a messy dataset, building a dashboard, or prototyping something quickly, but I try to approach all of it with the same curiosity and attention to detail.
+                I care most about whether the work actually gets used. Day to day, that means cleaning data, building dashboards, and quickly prototyping, with an emphasis on producing clear, reliable, and actionable outputs.
               </p>
             </div>
           </GlowCard>
