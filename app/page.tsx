@@ -178,7 +178,7 @@ export default async function Home() {
                   </ul>
                 </div>
                 <div className="mt-1 shrink-0 text-sm text-zinc-400 sm:ml-6 sm:text-right">
-                  <p>Nov 2025 – Present</p>
+                  <p>Nov 2025 – Mar 2026</p>
                   <p>San Francisco, CA</p>
                 </div>
               </div>
