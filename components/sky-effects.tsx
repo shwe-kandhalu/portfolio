@@ -93,7 +93,7 @@ export default function SkyEffects() {
   return (
     <>
       {/* Clouds — light mode only */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none dark:hidden z-0">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none dark:hidden z-0" style={{ contain: "paint" }}>
         {CLOUDS.map((c, i) => <Cloud key={i} {...c} />)}
       </div>
 
