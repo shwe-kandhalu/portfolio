@@ -35,6 +35,9 @@ export default async function Home() {
               <a href="#experience" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
                 Experience
               </a>
+              <a href="#research" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
+                Research
+              </a>
               <a href="#projects" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
                 Projects
               </a>
@@ -219,6 +222,47 @@ export default async function Home() {
             </GlowCard>
 
           </div>
+        </section>
+
+        {/* Research */}
+        <section id="research" className="mb-20 scroll-mt-28">
+          <h2 className="mb-8 text-2xl font-semibold">Research</h2>
+          <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-6">
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div className="flex-1">
+                <h3 className="font-semibold text-lg">Predicting Functional Decline in ADRD Using Baseline Neuropsychological Scores</h3>
+                <p className="text-[#0d9488] dark:text-teal-300 text-sm font-medium mt-0.5">UCSF MiHDaS Capstone · Memory &amp; Aging Center</p>
+
+                <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+                  Longitudinal study examining which baseline neuropsychological tests best predict subsequent functional decline (CDR+NACC FTLD Sum of Boxes) in 453 older adults across five ADRD syndrome groups, with 1,316 total observations over up to 6 timepoints. Cohort includes 375 monolingual and 78 bilingual participants.
+                </p>
+
+                <div className="mt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 mb-2">Key Findings</p>
+                  <ul className="space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
+                    <li>All 8 neuropsychological tests predict functional decline (all p&lt;0.0001), surviving Bonferroni correction</li>
+                    <li>MMSE is the strongest predictor (standardized β = −1.08 per SD)</li>
+                    <li>Predictive patterns differ by syndrome — executive tests dominate in Behavioral, memory tests are broadly predictive, Language group shows no significant predictors</li>
+                    <li>Bilingual participants show attenuated memory test effects (CVLT, Rey), suggesting possible cognitive reserve</li>
+                    <li>Results robust across sensitivity analyses including biomarker controls (NfL, GFAP, pTau217)</li>
+                  </ul>
+                </div>
+
+                <div className="mt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 mb-2">Methods</p>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Nested linear mixed effects models (lme4/lmerTest in R) with Baseline Score × Timepoint interaction terms. Covariates: age, sex, education, lingual status, syndrome group, random intercept by participant.</p>
+                </div>
+
+                <p className="mt-4 text-xs text-zinc-400">
+                  Shwetha Kandhalu Bhaskar, Isabel Elaine Allen, John Kornak, Jessica de Leon · Abstract submitted to DEB Conference, April 2026
+                </p>
+              </div>
+              <div className="mt-1 shrink-0 text-sm text-zinc-400 sm:ml-6 sm:text-right">
+                <p>2025 – Present</p>
+                <p>San Francisco, CA</p>
+              </div>
+            </div>
+          </GlowCard>
         </section>
 
         <section id="projects" className="scroll-mt-28">
