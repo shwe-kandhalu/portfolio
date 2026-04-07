@@ -55,19 +55,19 @@ function Cloud({ top, scale, duration, delay }: (typeof CLOUDS)[number]) {
         transformOrigin: "left center",
       }}
     >
-      <div className="relative h-20 w-72">
-        {/* Base body */}
-        <div className="absolute bottom-0 left-0 h-12 w-72 rounded-full bg-white/95 blur-[3px]" />
-        {/* Left puff */}
-        <div className="absolute bottom-6 left-4  h-14 w-20 rounded-full bg-white/95 blur-[2px]" />
-        {/* Left-center puff */}
-        <div className="absolute bottom-8 left-16 h-18 w-24 rounded-full bg-white    blur-[2px]" />
-        {/* Center puff — tallest */}
-        <div className="absolute bottom-9 left-28 h-20 w-22 rounded-full bg-white    blur-[1px]" />
-        {/* Right-center puff */}
-        <div className="absolute bottom-7 left-44 h-16 w-20 rounded-full bg-white/95 blur-[2px]" />
-        {/* Right puff */}
-        <div className="absolute bottom-4 left-56 h-12 w-16 rounded-full bg-white/90 blur-[3px]" />
+      <div className="relative h-16 w-96">
+        {/* Long wispy base */}
+        <div className="absolute bottom-0 left-0 h-6 w-96 rounded-full bg-white/60 blur-[8px]" />
+        {/* Mid layer — slightly narrower, more opaque */}
+        <div className="absolute bottom-2 left-8 h-8 w-80 rounded-full bg-white/70 blur-[6px]" />
+        {/* Upper wisp left */}
+        <div className="absolute bottom-5 left-12 h-7 w-44 rounded-full bg-white/55 blur-[10px]" />
+        {/* Upper wisp right */}
+        <div className="absolute bottom-4 left-48 h-6 w-36 rounded-full bg-white/45 blur-[12px]" />
+        {/* Bright core */}
+        <div className="absolute bottom-3 left-24 h-9 w-52 rounded-full bg-white/80 blur-[4px]" />
+        {/* Trailing edge fade */}
+        <div className="absolute bottom-1 left-72 h-4 w-28 rounded-full bg-white/30 blur-[14px]" />
       </div>
     </div>
   );

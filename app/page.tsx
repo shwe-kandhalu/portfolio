@@ -3,7 +3,6 @@ import ThemeToggle from "../components/theme-toggle";
 import CursorGlow from "../components/cursor-glow";
 import SkyEffects from "../components/sky-effects";
 import { GlowCard } from "../components/ui/spotlight-card";
-import { BackgroundPaths } from "../components/ui/background-paths";
 import SmoothScroll from "../components/smooth-scroll";
 
 const GITHUB_URL = "https://github.com/shwe-kandhalu";
@@ -26,7 +25,7 @@ export default async function Home() {
         <header className="mx-auto max-w-6xl rounded-2xl border border-zinc-200 bg-white/80 px-5 py-4 backdrop-blur transition-colors dark:border-white/10 dark:bg-zinc-950/75">
           <nav className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-600 dark:text-zinc-300">
-              Shwetha
+              Shwetha Kandhalu Bhaskar
             </p>
 
             <div className="flex flex-wrap items-center gap-2 text-sm">
@@ -47,8 +46,7 @@ export default async function Home() {
       {/* Hero — full viewport width so bridge and clouds span edge to edge */}
       <div className="relative">
         <SkyEffects />
-        <BackgroundPaths />
-        <div className="relative z-10 mx-auto max-w-6xl px-6 pt-32">
+<div className="relative z-10 mx-auto max-w-6xl px-6 pt-32">
           <section className="flex min-h-[580px] flex-col justify-center pb-20">
           <div className="flex flex-col-reverse items-start gap-10 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex-1">
