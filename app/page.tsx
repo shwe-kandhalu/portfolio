@@ -230,31 +230,31 @@ export default async function Home() {
           <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-6">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
               <div className="flex-1">
-                <h3 className="font-semibold text-lg">Predicting Functional Decline in ADRD Using Baseline Neuropsychological Scores</h3>
+                <h3 className="font-semibold text-lg">Bilingualism and Cognitive Decline Across 25 Neuropsychological Tests</h3>
                 <p className="text-[#0d9488] dark:text-teal-300 text-sm font-medium mt-0.5">UCSF MiHDaS Capstone · Memory &amp; Aging Center</p>
 
                 <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                  Longitudinal study examining which baseline neuropsychological tests best predict subsequent functional decline (CDR+NACC FTLD Sum of Boxes) in 453 older adults across five ADRD syndrome groups, with 1,316 total observations over up to 6 timepoints. Cohort includes 375 monolingual and 78 bilingual participants.
+                  Longitudinal mixed-effects analysis of 25 neuropsychological tests across 453 older adults over up to 6 visits, spanning five clinical groups and 375 monolingual plus 78 bilingual participants. The project evaluates whether lingual status is associated with different rates of decline across cognition, memory, language, visuospatial, and executive measures.
                 </p>
 
                 <div className="mt-4">
                   <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 mb-2">Key Findings</p>
                   <ul className="space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
-                    <li>All 8 neuropsychological tests predict functional decline (all p&lt;0.0001), surviving Bonferroni correction</li>
-                    <li>MMSE is the strongest predictor (standardized β = −1.08 per SD)</li>
-                    <li>Predictive patterns differ by syndrome — executive tests dominate in Behavioral, memory tests are broadly predictive, Language group shows no significant predictors</li>
-                    <li>Bilingual participants show attenuated memory test effects (CVLT, Rey), suggesting possible cognitive reserve</li>
-                    <li>Results robust across sensitivity analyses including biomarker controls (NfL, GFAP, pTau217)</li>
+                    <li>23 of 25 tests showed significant longitudinal change over time in the full cohort.</li>
+                    <li>Bilingual status was associated with slower decline on 3 measures at nominal significance: CVLT Long Delay Recall, Boston Naming Test, and D Word Fluency.</li>
+                    <li>Effects were not uniform across domains, which suggests any bilingual advantage is selective rather than global.</li>
+                    <li>The analysis spans general cognition, memory, language, visuospatial, and frontal-executive tests rather than the earlier 8-test subset.</li>
+                    <li>Stratified models by syndrome showed heterogeneity across Memory, Language, Behavioral, Motor, and Healthy Control groups.</li>
                   </ul>
                 </div>
 
                 <div className="mt-4">
                   <p className="text-xs font-semibold uppercase tracking-wide text-zinc-400 mb-2">Methods</p>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Nested linear mixed effects models (lme4/lmerTest in R) with Baseline Score × Timepoint interaction terms. Covariates: age, sex, education, lingual status, syndrome group, random intercept by participant.</p>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Linear mixed-effects models in R (lme4/lmerTest) for each test, using Timepoint × Lingual Status interaction terms and adjusting for age at baseline, sex, education, and syndrome group, with participant-level random effects.</p>
                 </div>
 
                 <p className="mt-4 text-xs text-zinc-400">
-                  Shwetha Kandhalu Bhaskar, Isabel Elaine Allen, John Kornak, Jessica de Leon · Abstract submitted to DEB Conference, April 2026
+                  Shwetha Kandhalu Bhaskar · UCSF MiHDaS Capstone, 2025–2026
                 </p>
               </div>
               <div className="mt-1 shrink-0 text-sm text-zinc-400 sm:ml-6 sm:text-right">
