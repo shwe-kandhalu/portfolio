@@ -59,7 +59,7 @@ export default async function Home() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-zinc-600 transition-colors dark:text-zinc-300">
-              I'm an MS Health Data Science student at UCSF who loves finding the story in messy data. I research how language background shapes cognitive decline in dementia patients, build products that excite, and occasionally ship an app or two. Outside of work, you'll find me running, doing yoga, or hunting down the best cup of coffee in SF!
+             I'm a Health Data Science graduate student focused on healthcare AI, clinical analytics, and product development, with a passion for uncovering the stories hidden in messy data. My research explores how language background influences cognitive decline in dementia patients, and I enjoy building products that solve meaningful problems—occasionally even shipping an app or two. Outside of work, you'll find me running, practicing yoga, or searching for the best cup of coffee in San Francisco!            </p>
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
