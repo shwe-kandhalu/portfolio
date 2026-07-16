@@ -1,12 +1,11 @@
 import { getProjects, getText } from "../lib/notion";
 import ThemeToggle from "../components/theme-toggle";
-import CursorGlow from "../components/cursor-glow";
 import SkyEffects from "../components/sky-effects";
 import SmoothScroll from "../components/smooth-scroll";
 
 const GITHUB_URL = "https://github.com/shwe-kandhalu";
 const LINKEDIN_URL = "https://www.linkedin.com/in/shwethakandhalu/";
-const EMAIL_URL = "mailto:shwe.kandhalu@gmail.com";
+const EMAIL_URL = "https://mail.google.com/mail/?view=cm&fs=1&to=shwe.kandhalu@gmail.com";
 
 export default async function Home() {
   const projects = await getProjects();
@@ -18,15 +17,11 @@ export default async function Home() {
   const visibleProjects = featuredProjects.length > 0 ? featuredProjects : projects;
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-sky-200 via-sky-100 to-white text-black transition-colors duration-300 dark:from-[#130b2e] dark:via-[#0b1530] dark:to-[#040a1a] dark:text-white">
+    <main className="min-h-screen bg-gradient-to-b from-[#fbe4d0] via-[#fdf1e2] to-[#fffbf5] text-black transition-colors duration-300 dark:from-[#5c3a3a] dark:via-[#8a5a42] dark:to-[#1a1512] dark:text-white">
 
       <div className="fixed inset-x-0 top-0 z-20 px-6 pt-6 pb-2">
         <header className="mx-auto max-w-6xl rounded-2xl border border-zinc-200 bg-white/80 px-5 py-4 backdrop-blur transition-colors dark:border-white/10 dark:bg-zinc-950/75">
-          <nav className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-600 dark:text-zinc-300">
-              Shwetha Kandhalu Bhaskar
-            </p>
-
+          <nav className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-end">
             <div className="flex flex-wrap items-center gap-2 text-sm">
               <a href="#experience" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
                 Experience
@@ -54,29 +49,16 @@ export default async function Home() {
               <span className="text-[#334155] dark:text-[#cbd5e1]">Shwetha</span>!
             </h1>
 
-            <div className="mt-6 max-w-2xl space-y-4 text-lg text-zinc-600 transition-colors dark:text-zinc-300">
-              <p>
-                I&apos;m an MS Health Data Science graduate from UCSF, now looking for roles in data science and data analytics. At the UCSF Memory &amp; Aging Center, I study how language background affects neuropsychological testing in dementia using statistical modeling, machine learning, and longitudinal data.
-              </p>
-              <p className="text-base">
-                I&apos;ve also worked outside academia, defining clinical metrics at Natera and evaluating early-stage healthtech companies through UCSF Innovation Ventures, which shaped how I approach data in applied, decision-focused settings. I care most about whether the work actually gets used: cleaning data, building dashboards, and prototyping quickly, with an emphasis on clear, reliable, actionable outputs.
-              </p>
-            </div>
+            <p className="mt-6 max-w-2xl text-lg text-zinc-600 transition-colors dark:text-zinc-300">
+              I&apos;m an MS Health Data Science graduate from UCSF, looking for roles in data science and data analytics. My work spans statistical modeling and machine learning at the UCSF Memory &amp; Aging Center, clinical metrics at Natera, and healthtech evaluation at UCSF Innovation Ventures. I care most about data that actually gets used: clean, reliable, and actionable.
+            </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              {/* Resume */}
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Resume"
-                className="flex h-11 items-center justify-center rounded-full border border-zinc-300 px-4 text-sm font-medium transition hover:bg-zinc-100 dark:border-white/15 dark:hover:bg-white/5"
-              >
-                Resume
-              </a>
               {/* Mail */}
               <a
                 href={EMAIL_URL}
+                target="_blank"
+                rel="noreferrer"
                 aria-label="Email Me"
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-300 transition hover:bg-zinc-100 dark:border-white/15 dark:hover:bg-white/5"
               >
@@ -265,6 +247,7 @@ export default async function Home() {
                 (f: any) => f.file?.url ?? f.external?.url ?? null
               ).filter(Boolean);
               const images = screenshots.length > 0 ? screenshots : coverUrl ? [coverUrl] : [];
+              const hasImage = images.length > 0;
 
               return (
                 <div
@@ -304,7 +287,7 @@ export default async function Home() {
                   ) : null}
 
                   {/* Content */}
-                  <div className="p-6">
+                  <div className={`p-6 ${!hasImage ? "flex flex-1 flex-col justify-center" : ""}`}>
                     <div className="flex flex-wrap gap-2">
                       {tech.map((item: string) => (
                         <span
@@ -361,7 +344,6 @@ export default async function Home() {
       </div>{/* end projects/footer wrapper */}
 
       <ThemeToggle />
-      <CursorGlow />
       <SmoothScroll />
     </main>
   );
