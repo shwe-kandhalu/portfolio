@@ -37,7 +37,7 @@ function Cloud({ top, scale, duration, delay }: (typeof CLOUDS)[number]) {
       <div className="relative h-16 w-96">
         {/* Long wispy base */}
         <div className="absolute bottom-0 left-0 h-6 w-96 rounded-full bg-white/30 blur-[10px]" />
-        {/* Mid layer — slightly narrower, more opaque */}
+        {/* Mid layer: slightly narrower, more opaque */}
         <div className="absolute bottom-2 left-8 h-8 w-80 rounded-full bg-white/35 blur-[8px]" />
         {/* Upper wisp left */}
         <div className="absolute bottom-5 left-12 h-7 w-44 rounded-full bg-white/25 blur-[12px]" />
@@ -70,12 +70,12 @@ function Star({ x, y, s, d }: (typeof STARS)[number]) {
 export default function SkyEffects() {
   return (
     <>
-      {/* Clouds — light mode only */}
+      {/* Clouds: light mode only */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none dark:hidden z-0" style={{ contain: "paint" }}>
         {CLOUDS.map((c, i) => <Cloud key={i} {...c} />)}
       </div>
 
-      {/* Stars — dark mode only */}
+      {/* Stars: dark mode only */}
       <div className="absolute top-0 left-0 right-0 h-[65%] pointer-events-none hidden dark:block z-0">
         {STARS.map((s, i) => <Star key={i} {...s} />)}
       </div>

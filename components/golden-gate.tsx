@@ -48,7 +48,7 @@ function MainCable() {
   );
 }
 
-// helper — just returns the leg offset from center
+// helper: just returns the leg offset from center
 function lw(_cx: number) { return 14 + 13 / 2; }
 
 function Suspenders() {

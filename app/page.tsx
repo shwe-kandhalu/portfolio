@@ -42,7 +42,7 @@ export default async function Home() {
         </header>
       </div>
 
-      {/* Hero — full viewport width so bridge and clouds span edge to edge */}
+      {/* Hero: full viewport width so bridge and clouds span edge to edge */}
       <div className="relative">
         <SkyEffects />
 <div className="relative z-10 mx-auto max-w-6xl px-6 pt-32">
@@ -59,7 +59,7 @@ export default async function Home() {
                 I&apos;m an MS Health Data Science graduate from UCSF, now looking for roles in data science and data analytics. At the UCSF Memory &amp; Aging Center, I study how language background affects neuropsychological testing in dementia using statistical modeling, machine learning, and longitudinal data.
               </p>
               <p className="text-base">
-                I&apos;ve also worked outside academia — defining clinical metrics at Natera and evaluating early-stage healthtech companies through UCSF Innovation Ventures — which shaped how I approach data in applied, decision-focused settings. I care most about whether the work actually gets used: cleaning data, building dashboards, and prototyping quickly, with an emphasis on clear, reliable, actionable outputs.
+                I&apos;ve also worked outside academia, defining clinical metrics at Natera and evaluating early-stage healthtech companies through UCSF Innovation Ventures, which shaped how I approach data in applied, decision-focused settings. I care most about whether the work actually gets used: cleaning data, building dashboards, and prototyping quickly, with an emphasis on clear, reliable, actionable outputs.
               </p>
             </div>
 
@@ -138,9 +138,9 @@ export default async function Home() {
                   <h3 className="font-semibold text-lg">Research Data Scientist</h3>
                   <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF Memory &amp; Aging Center</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
-                    <li>Collaborated with researchers to analyze cognitive test scores to study dementia progression across mono- and bilingual cohorts.</li>
-                    <li>Developed statistical and machine learning models linking biomarker profiles to cognitive decline and clinical outcomes.</li>
-                    <li>Cleaned and harmonized longitudinal datasets for downstream modeling and analysis.</li>
+                    <li>Conducted end-to-end statistical analysis for a longitudinal ADRD study, leveraging Claude and agentic workflows to accelerate R development, interpret model outputs, distill literature, and refine manuscript language for clinical journal alignment.</li>
+                    <li>Built and iteratively refined linear mixed-effects models in R, applying AI-assisted workflows for model specification, across 5 clinical groups to evaluate bilingual moderation of cognitive decline across 24 neuropsychological measures in 453 participants with ADRD syndromes.</li>
+                    <li>Developed reproducible analysis scripts and publication-quality figures for a first-author manuscript submitted to Alzheimer&apos;s &amp; Dementia.</li>
                   </ul>
                 </div>
                 <div className="mt-1 shrink-0 text-sm text-zinc-400 sm:ml-6 sm:text-right">
@@ -156,9 +156,9 @@ export default async function Home() {
                   <h3 className="font-semibold text-lg">Catalyst Intern</h3>
                   <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF Innovation Ventures</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
-                    <li>Evaluate early-stage healthcare and biotech innovations for technical feasibility and commercialization potential.</li>
-                    <li>Conduct market research, competitive analysis, and landscape assessments to inform go/no-go decisions.</li>
-                    <li>Collaborate with researchers and venture teams to translate scientific discoveries into product opportunities.</li>
+                    <li>Applied Claude Enterprise to run competitive and market analyses of neuroimaging AI products, evaluate market fit, and distill findings while collaborating with clinicians and regulatory advisors on validation requirements and product opportunities.</li>
+                    <li>Evaluated commercialization and regulatory strategy for an AI-enabled neuroimaging software platform for brain tumor monitoring.</li>
+                    <li>Conducted FDA 510(k) pathway analysis, predicate review, and Software as a Medical Device (SaMD) assessment.</li>
                   </ul>
                 </div>
                 <div className="mt-1 shrink-0 text-sm text-zinc-400 sm:ml-6 sm:text-right">
@@ -171,8 +171,8 @@ export default async function Home() {
             <div className="w-full rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-colors dark:border-white/10 dark:bg-zinc-950/40">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                 <div>
-                  <h3 className="font-semibold text-lg">Graduate Teaching Assistant — DATASCI 214</h3>
-                  <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF — Health Data Science</p>
+                  <h3 className="font-semibold text-lg">Graduate Teaching Assistant · DATASCI 214</h3>
+                  <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF · Health Data Science</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
                     <li>Support graduate-level data science instruction through coding walkthroughs, office hours, and debugging guidance.</li>
                     <li>Mentor students on applied machine learning concepts and evaluate coursework.</li>
@@ -191,10 +191,9 @@ export default async function Home() {
                   <h3 className="font-semibold text-lg">Technical Product Management Intern</h3>
                   <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">Natera</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
-                    <li>Defined and tracked clinical and performance metrics for Horizon carrier screening and Fetal Focus NIPT within RIR pipeline.</li>
-                    <li>Queried and analyzed large-scale genomic datasets using AWS Redshift, SQL, and QuickSight to validate reporting accuracy.</li>
-                    <li>Partnered with bioinformatics, clinical, and product teams to translate analytical insights into product requirements.</li>
-                    <li>Built dashboards and documentation, reducing manual reporting effort and improving visibility across 3+ cross-functional teams.</li>
+                    <li>Partnered with stakeholders across RIR, clinical operations, and engineering teams to define metrics and reporting requirements for Natera&apos;s DataX (DataMesh) initiative, including Horizon carrier screening and ClinRev workflows.</li>
+                    <li>Conducted data exploration in AWS Redshift and Unified Studio to validate metric definitions and support reporting dashboard development.</li>
+                    <li>Created PRDs, metric inventories, and onboarding documentation to support DataX reporting adoption and future development.</li>
                   </ul>
                 </div>
                 <div className="mt-1 shrink-0 text-sm text-zinc-400 sm:ml-6 sm:text-right">
@@ -293,24 +292,16 @@ export default async function Home() {
                         />
                       ))}
                     </div>
-                  ) : (
+                  ) : images[0] ? (
                     <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900/60 dark:to-slate-900/60">
-                      {images[0] ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          src={images[0]}
-                          alt={title}
-                          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                        />
-                      ) : (
-                        <div className="flex h-full w-full items-center justify-center">
-                          <span className="text-6xl font-bold text-slate-300 select-none dark:text-slate-700">
-                            {title?.[0] ?? "?"}
-                          </span>
-                        </div>
-                      )}
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={images[0]}
+                        alt={title}
+                        className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                      />
                     </div>
-                  )}
+                  ) : null}
 
                   {/* Content */}
                   <div className="p-6">
