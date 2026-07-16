@@ -59,7 +59,7 @@ export default async function Home() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-zinc-600 transition-colors dark:text-zinc-300">
-              I&apos;m an MS Health Data Science graduate from UCSF who loves finding the story in messy data. I researched how language background shapes cognitive decline in dementia patients, build products that excite, and occasionally ship an app or two. Outside of work, you&apos;ll find me running, doing yoga, or hunting down the best cup of coffee in SF!
+              I&apos;m an MS Health Data Science graduate from UCSF who loves turning messy data into models and insights. My research used statistical modeling to show how language background shapes cognitive decline in dementia patients, and I&apos;m now looking for roles in data science and data analytics. Outside of work, you&apos;ll find me running, doing yoga, or hunting down the best cup of coffee in SF!
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
