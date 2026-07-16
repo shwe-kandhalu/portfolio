@@ -59,7 +59,7 @@ export default async function Home() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-zinc-600 transition-colors dark:text-zinc-300">
-             I'm a Health Data Science graduate student focused on healthcare AI, clinical analytics, and product development, with a passion for uncovering the stories hidden in messy data. My research explores how language background influences cognitive decline in dementia patients, and I enjoy building products that solve meaningful problems—occasionally even shipping an app or two. Outside of work, you'll find me running, practicing yoga, or searching for the best cup of coffee in San Francisco!            </p>
+              I&apos;m an MS Health Data Science graduate from UCSF who loves finding the story in messy data. I researched how language background shapes cognitive decline in dementia patients, build products that excite, and occasionally ship an app or two. Outside of work, you&apos;ll find me running, doing yoga, or hunting down the best cup of coffee in SF!
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -285,18 +285,20 @@ export default async function Home() {
               const images = screenshots.length > 0 ? screenshots : coverUrl ? [coverUrl] : [];
 
               return (
-                <a
-                  key={project.id}
-                  href={github ?? live ?? "#"}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block"
-                >
                 <GlowCard
+                  key={project.id}
                   customSize
                   glowColor="teal"
                   className="group w-full !p-0 !aspect-auto"
                 >
+                  <a
+                    href={github ?? live ?? "#"}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={title}
+                    className="absolute inset-0 z-0"
+                  />
+
                   {/* Preview area */}
                   {images.length > 1 ? (
                     <div className="relative overflow-x-auto flex gap-2 p-2 bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950/60 dark:to-teal-950/60 scrollbar-hide">
@@ -354,7 +356,7 @@ export default async function Home() {
                           href={github}
                           target="_blank"
                           rel="noreferrer"
-                          className="text-sm underline decoration-[#0d9488] underline-offset-4 hover:decoration-[#0f766e]"
+                          className="relative z-10 text-sm underline decoration-[#0d9488] underline-offset-4 hover:decoration-[#0f766e]"
                         >
                           GitHub
                         </a>
@@ -364,7 +366,7 @@ export default async function Home() {
                           href={live}
                           target="_blank"
                           rel="noreferrer"
-                          className="text-sm underline decoration-[#16a34a] underline-offset-4 hover:decoration-[#15803d]"
+                          className="relative z-10 text-sm underline decoration-[#16a34a] underline-offset-4 hover:decoration-[#15803d]"
                         >
                           Live Demo
                         </a>
@@ -372,7 +374,6 @@ export default async function Home() {
                     </div>
                   </div>
                 </GlowCard>
-                </a>
               );
             })}
           </div>
