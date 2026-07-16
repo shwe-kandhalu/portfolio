@@ -2,7 +2,6 @@ import { getProjects, getText } from "../lib/notion";
 import ThemeToggle from "../components/theme-toggle";
 import CursorGlow from "../components/cursor-glow";
 import SkyEffects from "../components/sky-effects";
-import { GlowCard } from "../components/ui/spotlight-card";
 import SmoothScroll from "../components/smooth-scroll";
 
 const GITHUB_URL = "https://github.com/shwe-kandhalu";
@@ -29,9 +28,6 @@ export default async function Home() {
             </p>
 
             <div className="flex flex-wrap items-center gap-2 text-sm">
-              <a href="#about" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
-                About Me
-              </a>
               <a href="#experience" className="rounded-full px-4 py-2 hover:bg-zinc-100 dark:hover:bg-white/5">
                 Experience
               </a>
@@ -55,12 +51,17 @@ export default async function Home() {
           <div className="flex-1">
             <h1 className="text-5xl font-semibold tracking-tight sm:text-7xl">
               Hi, I'm{" "}
-              <span className="text-[#0d9488] dark:text-[#99f6e4]">Shwetha</span>!
+              <span className="text-[#334155] dark:text-[#cbd5e1]">Shwetha</span>!
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg text-zinc-600 transition-colors dark:text-zinc-300">
-              I&apos;m an MS Health Data Science graduate from UCSF who loves turning messy data into models and insights. My research used statistical modeling to show how language background shapes cognitive decline in dementia patients, and I&apos;m now looking for roles in data science and data analytics. Outside of work, you&apos;ll find me running, doing yoga, or hunting down the best cup of coffee in SF!
-            </p>
+            <div className="mt-6 max-w-2xl space-y-4 text-lg text-zinc-600 transition-colors dark:text-zinc-300">
+              <p>
+                I&apos;m an MS Health Data Science graduate from UCSF, now looking for roles in data science and data analytics. At the UCSF Memory &amp; Aging Center, I study how language background affects neuropsychological testing in dementia using statistical modeling, machine learning, and longitudinal data.
+              </p>
+              <p className="text-base">
+                I&apos;ve also worked outside academia — defining clinical metrics at Natera and evaluating early-stage healthtech companies through UCSF Innovation Ventures — which shaped how I approach data in applied, decision-focused settings. I care most about whether the work actually gets used: cleaning data, building dashboards, and prototyping quickly, with an emphasis on clear, reliable, actionable outputs.
+              </p>
+            </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               {/* Resume */}
@@ -126,34 +127,16 @@ export default async function Home() {
       </div>{/* end hero wrapper */}
 
       <div className="mx-auto max-w-6xl px-6 pb-16">
-        {/* About Me */}
-        <section id="about" className="mb-20 scroll-mt-28">
-          <h2 className="mb-8 text-2xl font-semibold">About Me</h2>
-          <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-8">
-            <div className="space-y-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-              <p>
-                I work in data science across healthcare and biomedical settings, focusing on turning messy, real-world data into something useful. At the UCSF Memory &amp; Aging Center, I study how language background affects neuropsychological testing in dementia using statistical modeling, machine learning, and longitudinal data.
-              </p>
-              <p>
-                I've also worked outside academia, defining clinical metrics at Natera and evaluating early-stage healthtech companies through UCSF Innovation Ventures, which has shaped how I approach data in more applied, decision-focused contexts.
-              </p>
-              <p>
-                I care most about whether the work actually gets used. Day to day, that means cleaning data, building dashboards, and quickly prototyping, with an emphasis on producing clear, reliable, and actionable outputs.
-              </p>
-            </div>
-          </GlowCard>
-        </section>
-
         {/* Experience */}
         <section id="experience" className="mb-20 scroll-mt-28">
           <h2 className="mb-8 text-2xl font-semibold">Experience</h2>
           <div className="space-y-4">
 
-            <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-6">
+            <div className="w-full rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-colors dark:border-white/10 dark:bg-zinc-950/40">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                 <div>
                   <h3 className="font-semibold text-lg">Research Data Scientist</h3>
-                  <p className="text-[#0d9488] dark:text-teal-300 text-sm font-medium mt-0.5">UCSF Memory &amp; Aging Center</p>
+                  <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF Memory &amp; Aging Center</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
                     <li>Collaborated with researchers to analyze cognitive test scores to study dementia progression across mono- and bilingual cohorts.</li>
                     <li>Developed statistical and machine learning models linking biomarker profiles to cognitive decline and clinical outcomes.</li>
@@ -165,13 +148,13 @@ export default async function Home() {
                   <p>San Francisco, CA</p>
                 </div>
               </div>
-            </GlowCard>
+            </div>
 
-            <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-6">
+            <div className="w-full rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-colors dark:border-white/10 dark:bg-zinc-950/40">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                 <div>
                   <h3 className="font-semibold text-lg">Catalyst Intern</h3>
-                  <p className="text-[#0d9488] dark:text-teal-300 text-sm font-medium mt-0.5">UCSF Innovation Ventures</p>
+                  <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF Innovation Ventures</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
                     <li>Evaluate early-stage healthcare and biotech innovations for technical feasibility and commercialization potential.</li>
                     <li>Conduct market research, competitive analysis, and landscape assessments to inform go/no-go decisions.</li>
@@ -183,13 +166,13 @@ export default async function Home() {
                   <p>San Francisco, CA</p>
                 </div>
               </div>
-            </GlowCard>
+            </div>
 
-            <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-6">
+            <div className="w-full rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-colors dark:border-white/10 dark:bg-zinc-950/40">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                 <div>
                   <h3 className="font-semibold text-lg">Graduate Teaching Assistant — DATASCI 214</h3>
-                  <p className="text-[#0d9488] dark:text-teal-300 text-sm font-medium mt-0.5">UCSF — Health Data Science</p>
+                  <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF — Health Data Science</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
                     <li>Support graduate-level data science instruction through coding walkthroughs, office hours, and debugging guidance.</li>
                     <li>Mentor students on applied machine learning concepts and evaluate coursework.</li>
@@ -200,13 +183,13 @@ export default async function Home() {
                   <p>San Francisco, CA</p>
                 </div>
               </div>
-            </GlowCard>
+            </div>
 
-            <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-6">
+            <div className="w-full rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-colors dark:border-white/10 dark:bg-zinc-950/40">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
                 <div>
                   <h3 className="font-semibold text-lg">Technical Product Management Intern</h3>
-                  <p className="text-[#0d9488] dark:text-teal-300 text-sm font-medium mt-0.5">Natera</p>
+                  <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">Natera</p>
                   <ul className="mt-3 space-y-1.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300 list-disc list-inside">
                     <li>Defined and tracked clinical and performance metrics for Horizon carrier screening and Fetal Focus NIPT within RIR pipeline.</li>
                     <li>Queried and analyzed large-scale genomic datasets using AWS Redshift, SQL, and QuickSight to validate reporting accuracy.</li>
@@ -219,7 +202,7 @@ export default async function Home() {
                   <p>San Carlos, CA</p>
                 </div>
               </div>
-            </GlowCard>
+            </div>
 
           </div>
         </section>
@@ -227,11 +210,11 @@ export default async function Home() {
         {/* Research */}
         <section id="research" className="mb-20 scroll-mt-28">
           <h2 className="mb-8 text-2xl font-semibold">Research</h2>
-          <GlowCard customSize glowColor="teal" className="w-full !aspect-auto !p-6">
+          <div className="w-full rounded-2xl border border-zinc-200 bg-white/70 p-6 shadow-sm backdrop-blur-sm transition-colors dark:border-white/10 dark:bg-zinc-950/40">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
               <div className="flex-1">
                 <h3 className="font-semibold text-lg">Bilingualism and Cognitive Decline Across 25 Neuropsychological Tests</h3>
-                <p className="text-[#0d9488] dark:text-teal-300 text-sm font-medium mt-0.5">UCSF MiHDaS Capstone · Memory &amp; Aging Center</p>
+                <p className="text-[#475569] dark:text-slate-400 text-sm font-medium mt-0.5">UCSF MiHDaS Capstone · Memory &amp; Aging Center</p>
 
                 <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                   Longitudinal mixed-effects analysis of 25 neuropsychological tests across 453 older adults over up to 6 visits, spanning five clinical groups and 375 monolingual plus 78 bilingual participants. The project evaluates whether lingual status is associated with different rates of decline across cognition, memory, language, visuospatial, and executive measures.
@@ -262,7 +245,7 @@ export default async function Home() {
                 <p>San Francisco, CA</p>
               </div>
             </div>
-          </GlowCard>
+          </div>
         </section>
 
         <section id="projects" className="scroll-mt-28">
@@ -285,11 +268,9 @@ export default async function Home() {
               const images = screenshots.length > 0 ? screenshots : coverUrl ? [coverUrl] : [];
 
               return (
-                <GlowCard
+                <div
                   key={project.id}
-                  customSize
-                  glowColor="teal"
-                  className="group w-full !p-0 !aspect-auto"
+                  className="group relative flex w-full flex-col overflow-hidden rounded-2xl border border-zinc-200 bg-white/70 shadow-sm backdrop-blur-sm transition-colors dark:border-white/10 dark:bg-zinc-950/40"
                 >
                   <a
                     href={github ?? live ?? "#"}
@@ -301,7 +282,7 @@ export default async function Home() {
 
                   {/* Preview area */}
                   {images.length > 1 ? (
-                    <div className="relative overflow-x-auto flex gap-2 p-2 bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950/60 dark:to-teal-950/60 scrollbar-hide">
+                    <div className="relative overflow-x-auto flex gap-2 p-2 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900/60 dark:to-slate-900/60 scrollbar-hide">
                       {images.map((src, i) => (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -313,7 +294,7 @@ export default async function Home() {
                       ))}
                     </div>
                   ) : (
-                    <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950/60 dark:to-teal-950/60">
+                    <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-900/60 dark:to-slate-900/60">
                       {images[0] ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -323,7 +304,7 @@ export default async function Home() {
                         />
                       ) : (
                         <div className="flex h-full w-full items-center justify-center">
-                          <span className="text-6xl font-bold text-teal-200 select-none dark:text-teal-900">
+                          <span className="text-6xl font-bold text-slate-300 select-none dark:text-slate-700">
                             {title?.[0] ?? "?"}
                           </span>
                         </div>
@@ -337,7 +318,7 @@ export default async function Home() {
                       {tech.map((item: string) => (
                         <span
                           key={item}
-                          className="rounded-full bg-[#f0fdfa] px-3 py-1 text-xs text-[#115e59] transition-colors dark:bg-teal-500/10 dark:text-teal-200"
+                          className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700 transition-colors dark:bg-slate-400/10 dark:text-slate-300"
                         >
                           {item}
                         </span>
@@ -356,7 +337,7 @@ export default async function Home() {
                           href={github}
                           target="_blank"
                           rel="noreferrer"
-                          className="relative z-10 text-sm underline decoration-[#0d9488] underline-offset-4 hover:decoration-[#0f766e]"
+                          className="relative z-10 text-sm underline decoration-[#475569] underline-offset-4 hover:decoration-[#1e293b]"
                         >
                           GitHub
                         </a>
@@ -373,7 +354,7 @@ export default async function Home() {
                       )}
                     </div>
                   </div>
-                </GlowCard>
+                </div>
               );
             })}
           </div>

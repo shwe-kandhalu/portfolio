@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shwetha Kandhalu | Portfolio",
+  title: "Hello!",
   description: "Personal portfolio website",
 };
 
